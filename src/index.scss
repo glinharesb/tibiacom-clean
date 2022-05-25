@@ -1,0 +1,27 @@
+body {
+  background-image: url(https://static.tibia.com/images/global/header/background-artwork.jpg);
+  margin: 0;
+  padding: 0;
+  background-color: #051122;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.main-site-container {
+  max-width: 1280px;
+  min-width: 1024px;
+  margin: 0 auto;
+  font: 1.2em Helvetica, arial, sans-serif;
+  display: grid;
+  grid-template-columns: 205px auto 200px;
+  grid-template-areas:
+    'header header header'
+    'navigation content sidebar'
+    'navigation content sidebar';
+}
+
+.main-header {
+  position: relative;
+  height: 155px;
+  grid-area: header;
+}
